@@ -1,11 +1,31 @@
+from Plastic.Ships import WarSun
+
+
 class Tile:
 
-    planets = []
-    wormholes = []
-    hazards = []
-    attackers = []
-    defenders = []
-    activations = []
+    systemName = ""
+    mapCoordinates = ()  # where in map array tile is
+    planets = []  # list of all planets in tile
+    wormholes = []  # list of all wormholes in tile
+    hazards = []  # list of all hazards on tile
+
+    attackers = []  # list of all invading units
+    defenders = []  # list of all local units
+    activations = []  # list of all players who have activated the system
+
+
+    def Tile(self, planets, wormholes, hazards):
+        self.planets = planets
+        self.wormholes = wormholes
+        self.hazards = hazards
+        self.__nameSystem()
+
+    def __nameSystem(self):
+        for x in self.planets:
+            self.systemName += x.name
+
+    def getSystemName(self):
+        return self.systemName
 
     def canActivate(self, race):
         for x in self.activations:
@@ -51,3 +71,10 @@ class Tile:
                       'destroyer': 0,
                       }
         return emptyFleet
+
+    def hasWarSun(self):
+        testSun = WarSun()
+        for x in self.defenders:
+            if isinstance(x, testSun):
+                return True
+        return False
