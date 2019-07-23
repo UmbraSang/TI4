@@ -6,5 +6,11 @@ class SpaceDock(Planetary):
         Planetary.__init__(self)
         #
         self.capacity = 3
-        self.production = self.location.resource+3
+        self.production = 3
         #
+
+    def getBaseProduction(self):
+        return self.production
+
+    def getProductionLimit(self):
+        return self.location.productionLimit()
