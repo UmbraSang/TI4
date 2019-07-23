@@ -3,8 +3,8 @@ import random
 
 class Unit:
     owner = None
-    # change to reinforcements before assignment
-    location = None
+
+    location = None  # change to reinforcements before assignment
     health = 1  # change this to upper/lower space to keep singleton?
 
     cost = None
