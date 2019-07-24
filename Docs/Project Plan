@@ -1,0 +1,25 @@
+#OverEpic - digital TI4
+
+##Epic1 - backend that works regardless of future UI
+###Epic1 Stories:
+
+    Board
+        Tiles
+        Planets
+        Hazards
+        Wormholes
+        Map
+        Movement
+    Units
+        Standard units
+        Flagship basics
+        Unique units
+    Players
+        “Player sheet”
+        Racial integration
+    Game
+        Game object for holding map, players, etc
+
+##Epic2 - UI that makes the game interact-able
+##Epic3 - multiplayer and networking
+

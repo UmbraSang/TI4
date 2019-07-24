@@ -1,0 +1,88 @@
+#Meeting Topics
+    Core goals
+    Extendable
+    Modable
+    Good coding practices
+    Maintain the readme & changelog!!
+
+##Research
+
+###Tech
+    Focus on extendability
+    Visitor pattern?
+        Too big?
+        Map event list wherever tech can apply?
+###Units
+    Variants
+    Racial
+    Anything that can be on board
+    Is singleton viable? flyweight?
+###Action cards
+    Focus on timing windows
+###Agenda cards
+    Focus on structure archetypes
+###Racial
+    Enum?
+    Lookup table?
+    flyweight?
+        lending to mix&match custom races
+###TI3 porting
+    Tiles & Planets
+    Traits
+    Refresh abilities
+    Mechanized units
+
+
+
+##Design decisions
+###Singleton units?
+    Dealing with sustain
+###Map design
+    Customizable shape and size
+    Storage designs
+    Data structure representations
+    wormholes messing with adjacency
+    movement code
+    breadth first searching?
+###Inheritance structures
+###UI decisions
+    Now or later?
+    goals?
+###System save code
+    Check 330 save code
+###Flow of a turn
+    externally controlled?
+    player object controlled?
+###Map building
+    How do Hashmaps work?
+###Needed states?
+    activated/free?
+    active/passed
+    Extinct = forever passed?
+###Trade machine?
+    All tradeable objects
+    Just a giant switch statement?
+###Strategy cards
+    singleton?
+###Where does battle happen?
+    Battle machine?
+    In tile?
+###Technology
+    Decorator pattern?
+
+##Timeline/ priorities
+    What comes first?
+    Basic race then add?
+    What can be built in parallel?
+    UML?
+
+##Tasks
+    Who wants to do what?
+    Possible team members?
+    Methods of contact
+    Realistic meeting schedule?
+    Slack?
+    Git?
+    Branches?
+
+
